@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-axios.defaults.baseURL = 'http://localhost:49756/api/'
+axios.defaults.baseURL = 'https://vu-schedule-api.azurewebsites.net/api/'
 
 const appService = {
   getSubjects (id) {

@@ -1,11 +1,12 @@
 {
-  "name": "VuScheduleClient",
+  "name": "vu-schedule-client",
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "build": "node ./node_modules/webpack/bin/webpack --config ./build/webpack.base.config.js",
+    "build": "node ./node_modules/webpack/bin/webpack --config ./build/webpack.client.config.js",
     "start": "node server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:client": "cross-env NODE_ENV=production webpack --config ./build/wabpack.client.config.js --progress --hide-modules",
+    "build2": "rimraf ./dist && npm run build:client"
   },
   "keywords": [],
   "author": "",
