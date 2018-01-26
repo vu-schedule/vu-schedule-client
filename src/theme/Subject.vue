@@ -21,9 +21,9 @@
         </div>
       </div>
     </div>
-    <div class="container">
+    <!-- <div class="container">
       <span>Pasirinkti kursai: {{ checkedSubjects.map(x => x.title + (x.subgroup == null ? "" : " (Pogrupis " + x.subgroup + ")")) }}</span>
-    </div>
+    </div> -->
     <div v-show=!downloading class="container content has-text-centered">
       <a  v-on:click="getCalendar" class="button is-primary">Gauti kalendorių</a>
     </div>
