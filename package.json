@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "build": "node ./node_modules/webpack/bin/webpack --config ./build/webpack.client.config.js",
+    "build2": "node ./node_modules/webpack/bin/webpack --config ./build/webpack.client.config.js",
     "start": "node server",
-    "build:client": "cross-env NODE_ENV=production webpack --config ./build/wabpack.client.config.js --progress --hide-modules",
-    "build2": "rimraf ./dist && npm run build:client"
+    "build:client": "cross-env NODE_ENV=production webpack --config ./build/webpack.client.config.js --progress --hide-modules",
+    "build": "rimraf ./dist && npm run build:client"
   },
   "keywords": [],
   "author": "",
